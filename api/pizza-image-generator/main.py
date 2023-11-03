@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 # Create a Flask Instance
 app = Flask(__name__)
@@ -7,4 +7,4 @@ app = Flask(__name__)
 # Create a route decorator
 @app.route('/')
 def index():
-    return 'Hello world'
+    return render_template('index.html')

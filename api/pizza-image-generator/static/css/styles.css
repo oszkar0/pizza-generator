@@ -1,0 +1,18 @@
+body {
+    background-color: #feffdf;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #ffe79a;
+    padding: 10px;
+}
+
+.logo {
+    display: inline-block;
+    color: #ffe79a;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
