@@ -10,5 +10,15 @@
     <div class="navbar">
         <img src="{{ url_for('static', filename='images/pizza_generator_logo.png') }}">
     </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="image-grid" id="image-grid">
+            </div>
+        </div>
+        <div class="right-column">
+            <button class="generate-button" id="generate-button">GENERATE PIZZAS</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

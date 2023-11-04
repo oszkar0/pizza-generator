@@ -16,3 +16,47 @@ body {
     font-weight: bold;
     margin-left: 20px;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 10px;
+    margin: 20px;
+}
+
+.left-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.image {
+    background-color: #eee;
+    width: 100%;
+    padding-top: 100%; /* Maintains a square aspect ratio for each image div */
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate-button {
+    background-color: #ef5a5a;
+    color: #feffdf;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
