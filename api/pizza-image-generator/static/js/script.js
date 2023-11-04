@@ -1,7 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const generatePizzasButton = document.getElementById("generate-button")
+    const generatePizzasButton = document.getElementById("generate-button");
+    const slider = document.getElementById("slider");
+    const sliderValue = document.getElementById("image-size-label");
+
+    slider.oninput = function() {
+        sliderValue.innerText = slider.value + "x" + slider.value;
+    };
+
     generatePizzasButton.addEventListener("click", () => {
-        fetch("/generate_images")
+        fetch("/generate_images?image_size=" + slider.value)
             .then(response => response.json())
             .then(data => {
                 const images = data.images;

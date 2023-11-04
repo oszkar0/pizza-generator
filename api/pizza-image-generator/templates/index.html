@@ -17,6 +17,11 @@
         </div>
         <div class="right-column">
             <button class="generate-button" id="generate-button">GENERATE PIZZAS</button>
+            <div class="slidecontainer">
+                <input type="range" min="64" max="256" value="64" class="slider" id="slider">
+                <label>Image size:</label>
+                <label id="image-size-label">64x64</label>
+            </div>
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
