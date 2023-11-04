@@ -10,18 +10,16 @@
     <div class="navbar">
         <img src="{{ url_for('static', filename='images/pizza_generator_logo.png') }}">
     </div>
-    <div class="container">
-        <div class="left-column">
-            <div class="image-grid" id="image-grid">
-            </div>
+    <div class="wrapper">
+        <button class="generate-button" id="generate-button">GENERATE PIZZAS</button>
+        <input type="range" min="64" max="256" value="64" class="slider" id="slider">
+        <div>
+            <label>IMAGE SIZE:</label>
+            <label id="image-size-label">64x64</label>
         </div>
-        <div class="right-column">
-            <button class="generate-button" id="generate-button">GENERATE PIZZAS</button>
-            <div class="slidecontainer">
-                <input type="range" min="64" max="256" value="64" class="slider" id="slider">
-                <label>Image size:</label>
-                <label id="image-size-label">64x64</label>
-            </div>
+    </div>
+    <div>
+        <div class="image-grid" id="image-grid">
         </div>
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
